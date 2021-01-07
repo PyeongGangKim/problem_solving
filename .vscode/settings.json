@@ -3,6 +3,9 @@
         "vector": "cpp",
         "ios": "cpp",
         "__split_buffer": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp"
     }
 }
