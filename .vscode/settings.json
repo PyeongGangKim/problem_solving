@@ -7,6 +7,7 @@
         "array": "cpp",
         "string_view": "cpp",
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "ratio": "cpp"
     }
 }
