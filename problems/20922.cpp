@@ -8,14 +8,7 @@ int N, K;
 int nums[200001];
 int check[100001];
 int maxLen = -1;
-bool checkLen(int start, int end){
-    for(int i = start ; i <= end ; i++){
-        check[nums[i]] += 1;
-        if(check[nums[i]] > K) return false;
-    }
-    maxLen = max(maxLen, end - start + 1);
-    return true;
-}
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
@@ -26,12 +19,20 @@ int main(){
     }
     int start, end;
     start = 0; end = 0;
+    memset(check, 0, sizeof(check));
+    check[nums[end]]++;
     while(start <= end){
         if(end == N) break;
-        memset(check, 0, sizeof(check));
-        bool isPossible = checkLen(start, end);
-        if(isPossible) end++;
-        else start++;
-    }
+        if(check[nums[end]] > K){
+            check[nums[start]]--;
+            start++;
+        }
+        else {
+            maxLen = max(maxLen, end - start + 1);
+            end++;
+            check[nums[end]]++;
+        }
+         
+   }
     cout << maxLen << "\n";
 }

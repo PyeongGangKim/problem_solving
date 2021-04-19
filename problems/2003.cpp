@@ -38,7 +38,6 @@ int main(){
         else{
             start++;
         }
-        // cout << start << " " << end <<" "<< checkNum << "\n";
     }
     cout << cnt << "\n";
 
