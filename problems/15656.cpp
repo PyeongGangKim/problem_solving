@@ -6,6 +6,7 @@ using namespace std;
 
 int M;
 int N;
+
 vector<int> nums;
 vector<int> v;
 void print(){
@@ -14,16 +15,16 @@ void print(){
     }
     cout << "\n";
 }
-void backTracking(int n, int cnt){
+void backTracking( int cnt){
 
     if(cnt == M){
         print();
     }
     else{
-        for(int i = n ; i < N ; i++){
+        for(int i = 0 ; i < N ; i++){
             cnt++;
             v.push_back(nums[i]);
-            backTracking(i,cnt);
+            backTracking(cnt);
             v.pop_back();
             cnt--;
         }
@@ -40,6 +41,6 @@ int main(){
         nums.push_back(temp);
     }
     sort(nums.begin(),nums.end());
-    backTracking(0,0);
+    backTracking(0);
 
 }
