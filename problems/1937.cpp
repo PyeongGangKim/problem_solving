@@ -14,7 +14,7 @@ int dp(int y, int x){
     res = 1;
     for(int i = 0 ; i < 4 ; i++){
         int nextX = x + xMove[i]; int nextY = y + yMove[i];
-        if(nextX >= n || nextX < 0 || nextY >= n || nextY < 0 || map[y][x] > map[nextY][nextX]) continue;
+        if(nextX >= n || nextX < 0 || nextY >= n || nextY < 0 || map[y][x] >= map[nextY][nextX]) continue;
         res = max(res, dp(nextY, nextX) + 1);
     }
     return res;
