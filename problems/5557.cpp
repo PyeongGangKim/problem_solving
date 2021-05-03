@@ -3,23 +3,20 @@
 
 using namespace std;
 
-int cache[101];
+long long cache[101][30];
 int nums[101];
 int num;
-int dp(int idx, int curNum){
+long long dp(int idx, int curNum){
+    if(curNum < 0 || curNum > 20) return 0;
     if(idx == num - 2){
-        cout << curNum << "\n";
         if(curNum == nums[num-1]) return 1;
+        else return 0;
     }
-    int& res = cache[idx];
+    long long& res = cache[idx][curNum];
     if(res != -1) return res;
     res = 0;
-    if(curNum + nums[idx+1] <= 20){
-        res += dp(idx+1, curNum + nums[idx+1]);
-    }
-    if(curNum - nums[idx+1] >= 0){
-        res += dp(idx+1, curNum - nums[idx+1]);
-    }
+    res += dp(idx + 1, curNum + nums[idx+1]);
+    res += dp(idx + 1, curNum - nums[idx+1]);
     return res;
 }
 int main(){
@@ -32,7 +29,7 @@ int main(){
         cin >> nums[i];
     }
     memset(cache, -1, sizeof(cache));
-    dp(0,nums[0]);
-    cout << cache[0] << "\n";
+    
+    cout << dp(0,nums[0]) << "\n";
     
 }
