@@ -32,7 +32,7 @@ void bfs(){
 
     }
 }
-int solution(int n, vector<vector<int>> edge) {
+int solution(int n, vector<vector<int> > edge) {
     int answer = 0;
 
     memset(cnt, 0, sizeof(cnt));
