@@ -29,7 +29,7 @@ void dfs(vector<bool> &check, vector<vector<string>> tickets, string cur, int n,
     temp.pop_back();
 }
 
-vector<string> solution(vector<vector<string>> tickets) {
+vector<string> solution(vector<vector<string> > tickets) {
     vector<string> temp;
     int n = tickets.size();
     vector<bool> check(n, false);
