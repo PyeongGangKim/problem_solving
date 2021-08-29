@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 int INF = 1e9;
 
 int moveX[4] = {0,0,1,-1};
