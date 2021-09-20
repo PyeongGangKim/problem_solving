@@ -26,18 +26,36 @@ void bfs(int x, int y){
         q.pop();
         if(map[curX][curY] != 0 && map[curX][curY] < size){
             //먹고, 위치 스타트 위치 옮기고 시간 플러스
+            int eatX = curX; int eatY = curY;
+            
             eat++;
             if(eat == size){
                 eat = 0;
                 size++;
             }
             res += time;
-            map[curX][curY] = 0;
+            
+            while(q.front().first > time){
+                if(map[q.front().second.first][q.front().second.second] >= size || map[q.front().second.first][q.front().second.second] == 0) continue;
+                if(eatX > q.front().second.first){
+                    eatX = q.front().second.first;
+                    eatY = q.front().second.second;
+                }
+                else if(eatX == q.front().second.first){
+                    if(eatY > q.front().second.second){
+                        eatX = q.front().second.first;
+                        eatY = q.front().second.second;
+                    }
+                }
+                q.pop();
+            }
             while(!q.empty()) q.pop();
-            q.push(make_pair(0, make_pair(curX, curY)));
+            cout << time << " " << size << " " << eatX << " " << eatY << " " << map[eatX][eatY] << "\n";
+            map[eatX][eatY] = 0;
+            q.push(make_pair(0, make_pair(eatX, eatY)));
             memset(check,false,sizeof(check));
-            check[curX][curY] = true;
-            map[curX][curY] = 0;
+            check[eatX][eatY] = true;
+            map[eatX][eatY] = 0;
             continue;
         }
         for(int i = 0 ; i < 4 ; i++){
