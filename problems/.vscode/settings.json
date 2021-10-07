@@ -10,6 +10,7 @@
         "string": "cpp",
         "iostream": "cpp",
         "stack": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iosfwd": "cpp"
     }
 }
