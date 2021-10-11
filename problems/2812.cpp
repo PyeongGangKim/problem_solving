@@ -22,7 +22,6 @@ int main(){
         }
         dq.push_back(input[i]);
     }
-    cout << dq.size() << "\n";
     for(int i = 0 ; i < dq.size()-K ; i++){
         cout << dq[i];
     }
