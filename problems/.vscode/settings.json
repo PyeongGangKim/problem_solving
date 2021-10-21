@@ -11,6 +11,8 @@
         "iostream": "cpp",
         "stack": "cpp",
         "utility": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "array": "cpp",
+        "string_view": "cpp"
     }
 }
