@@ -13,6 +13,7 @@
         "utility": "cpp",
         "iosfwd": "cpp",
         "array": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "cstring": "cpp"
     }
 }

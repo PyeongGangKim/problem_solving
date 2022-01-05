@@ -1,32 +1,49 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <cstring>
 
 using namespace std;
-
+bool dp[50001];
 int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
     int N;
-    vector<int> v;
-    while(cin >> N){
-        int p1 = 0; int p2 = 0;
-        while(N--){
+    int tc = 3;
+    while(tc--){
+        vector<pair<int,int> > v;
+        memset(dp, false,sizeof(dp));
+        cin >> N;
+        int sum = 0;
+        for(int i = 0 ; i < N ; i++){
             int coin, num;
             cin >> coin >> num;
-            while(num--) v.push_back(coin);
+            sum += coin * num;
+            v.push_back(make_pair(coin,num));
         }
-        sort(v.begin(), v.end(), greater<int>());
-        for(int i = 0 ; i < v.size() ; i++){
-            if(p1 <= p2){
-                p1 += v[i];
-            }
-            else p2 += v[i];
+        if(sum % 2 == 1){
+            cout << "0\n";
+            continue; 
         }
-        v.clear();
-        // cout << p1 << " " << p2 << "\n";
-        if(p1 == p2) cout << "1\n";
-        else cout << "0\n";
+        dp[0] = true;
+        for(int i = 0 ; i <= v[0].second ; i++){
+            if(v[0].first * i > sum/2) break;
+            dp[v[0].first * i] = true;
+        }
+
+        for(int i = 1 ; i < N ; i++){
+            for(int j = sum/2 ; j >= 0 ; j--){
+                if(!dp[j]) continue;
+                for(int k = 1 ; k <= v[i].second ; k++){
+                    if(j+k * v[i].first > sum / 2) break;
+                    dp[j+k * v[i].first] = true;
+                }
+                if(dp[sum/2]) break;
+            }    
+            if(dp[sum/2]) break;
+        }
+        cout << dp[sum/2] << "\n";
+        
     }
 }
