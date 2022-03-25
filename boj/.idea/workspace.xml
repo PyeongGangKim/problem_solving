@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bbd6934-7a2e-422d-a2d3-d01901ee8f46" name="Default Changelist" comment="3/6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/번13460/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/번17780/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/InitDb.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/api/MemberApiController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/api/OrderSimpleApiController.java" afterDir="false" />
@@ -105,10 +105,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/번13460/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/번13460/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/번1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/번2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/번3.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/domain/item/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/domain/item/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../study/spring-boot-jpa-study/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java" afterDir="false" />
@@ -163,7 +161,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -190,12 +188,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="번2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socar.번2" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="번17780.Main" />
       <module name="boj.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socar.*" />
+          <option name="PATTERN" value="번17780.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="번2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sk2.번2" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="번1976.Main" />
       <module name="boj.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sk2.*" />
+          <option name="PATTERN" value="번1976.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="번3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sk2.번3" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="번18430.Main" />
       <module name="boj.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sk2.*" />
+          <option name="PATTERN" value="번18430.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.번1 (1)" />
-        <item itemvalue="Application.번2 (1)" />
-        <item itemvalue="Application.번3" />
-        <item itemvalue="Application.번2" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +277,9 @@
       <workItem from="1647685758067" duration="56000" />
       <workItem from="1647751587556" duration="6643000" />
       <workItem from="1647785454570" duration="732000" />
-      <workItem from="1647962300350" duration="5151000" />
+      <workItem from="1647962300350" duration="5886000" />
+      <workItem from="1648015360474" duration="8488000" />
+      <workItem from="1648136272334" duration="5986000" />
     </task>
     <task id="LOCAL-00001" summary="3/6">
       <created>1646565938868</created>

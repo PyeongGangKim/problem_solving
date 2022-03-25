@@ -25,8 +25,10 @@ GCD합/Main.java
  단어길이재기.Main
 번1913/Main.java
  번1913.Main
-번10973/Main.java
- 번10973.Main
+번13460/Main.java
+ 번13460.Main
+ 번13460.Main$Ball
+ 번13460.Main$Node
 번1707/Main.java
  번1707.Main
 번10974/Main.java
@@ -95,11 +97,16 @@ GCD합/Main.java
 번16964/Main.java
  번16964.Main
  번16964.Main$Node
+번10973/Main.java
+ 번10973.Main
 번1952/Main.java
  번1952.Main
 번1759/Main.java
  번1759.Main
-번13460/Main.java
- 번13460.Main
- 번13460.Main$Ball
- 번13460.Main$Node
+번17780/Main.java
+ 번17780.Main
+ 번17780.Main$Horse
+번1976/Main.java
+ 번1976.Main
+번18430/Main.java
+ 번18430.Main
